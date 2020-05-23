@@ -1,0 +1,24 @@
+{
+  "name": "socket-server-baslangic",
+  "version": "1.0.0",
+  "description": "\"# socket-server-baslangic\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haldavozli/socket-server-baslangic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haldavozli/socket-server-baslangic/issues"
+  },
+  "homepage": "https://github.com/haldavozli/socket-server-baslangic#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
