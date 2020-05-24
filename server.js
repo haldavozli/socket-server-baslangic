@@ -4,7 +4,10 @@ var io = require('socket.io')(http);
 const port = process.env.PORT || 3000;
 
 io.on('connection', function(socket){
-  socket.emit('welcome', {message: "Hi, Enes!"})
+  socket.emit('welcome', {message: "Hi, Enes!"});
+
+  console.log('a user connected');
+
 
 });
 
