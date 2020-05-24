@@ -8,11 +8,11 @@ app.get('/', function(req, res){
 });
 
 io.on('connection', function(socket) {
-    socket.on('sendNickname', function(username) {
-        socket.username = username;
-        users.push(socket.username);
-        socket.emit('showRooms', rooms);
-    });
+socket.on('send-nickname', function(nickname) {
+    socket.nickname = nickname;
+    users.push(socket.nickname);
+    console.log(users);
+});
 
     socket.on('disconnect', function() {
         socket.broadcast.to(socket.room).emit('notice', socket.username + ' has left the room');
