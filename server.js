@@ -1,5 +1,5 @@
 var app = require('express')();
-var http = require('http').createServer(app);
+var http = require('http').Server(app);
 var io = require('socket.io')(http);
 const port = process.env.PORT || 3000;
 
